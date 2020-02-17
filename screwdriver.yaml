@@ -5,7 +5,7 @@ jobs:
     secrets:
       - COVERALLS_NODE_REPO_TOKEN
     environment:
-      COVERALLS_REPO_TOKEN: COVERALLS_NODE_REPO_TOKEN
+      COVERALLS_REPO_TOKEN: $COVERALLS_NODE_REPO_TOKEN
       COVERALLS_SERVICE_NAME: "screwdriver"
       COVERALLS_GIT_BRANCH: "master"
     steps:
