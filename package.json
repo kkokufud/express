@@ -76,7 +76,8 @@
     "pbkdf2-password": "1.2.1",
     "should": "13.2.3",
     "supertest": "3.3.0",
-    "vhost": "~3.0.2"
+    "vhost": "~3.0.2",
+    "coveralls": "3.0.9"
   },
   "engines": {
     "node": ">= 0.10.0"
