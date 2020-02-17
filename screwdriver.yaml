@@ -6,6 +6,8 @@ jobs:
       - COVERALLS_NODE_REPO_TOKEN
     environment:
       COVERALLS_REPO_TOKEN: COVERALLS_NODE_REPO_TOKEN
+      COVERALLS_SERVICE_NAME: "screwdriver"
+      COVERALLS_GIT_BRANCH: "master"
     steps:
       - install: npm install
       - run: ./node_modules/.bin/istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage
